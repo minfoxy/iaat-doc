@@ -25,7 +25,7 @@ Before accessing the API, Clients should include an `Authorization` header with 
 #### GET /api/owners/{id}/
 - **Description**: Retrieve details of a specific owner by their unique ID.
 - **Parameters**:
-  - `id` (int): The unique identifier of the owner.
+  - `id` (uuid): The unique identifier of the owner.
 - **Response**:
   - `200 OK`: Returns a JSON object representing the owner.
   - `404 Not Found`: Returned if the owner with the specified ID is not found.
@@ -45,7 +45,7 @@ Before accessing the API, Clients should include an `Authorization` header with 
 #### GET /api/owner-detail-documents/{id}/
 - **Description**: Retrieve details of a specific owner detail document by its unique ID.
 - **Parameters**:
-  - `id` (int): The unique identifier of the owner detail document.
+  - `id` (uuid): The unique identifier of the owner detail document.
 - **Response**:
   - `200 OK`: Returns a JSON object representing the owner detail document.
   - `404 Not Found`: Returned if the owner detail document with the specified ID is not found.
@@ -65,7 +65,7 @@ Before accessing the API, Clients should include an `Authorization` header with 
 #### GET /api/agencies/{id}/
 - **Description**: Retrieve details of a specific agency by its unique ID.
 - **Parameters**:
-  - `id` (int): The unique identifier of the agency.
+  - `id` (uuid): The unique identifier of the agency.
 - **Response**:
   - `200 OK`: Returns a JSON object representing the agency.
   - `404 Not Found`: Returned if the agency with the specified ID is not found.
@@ -85,7 +85,7 @@ Before accessing the API, Clients should include an `Authorization` header with 
 #### GET /api/officers/{id}/
 - **Description**: Retrieve details of a specific officer by their unique ID.
 - **Parameters**:
-  - `id` (int): The unique identifier of the officer.
+  - `id` (uuid): The unique identifier of the officer.
 - **Response**:
   - `200 OK`: Returns a JSON object representing the officer.
   - `404 Not Found`: Returned if the officer with the specified ID is not found.
@@ -105,7 +105,7 @@ Before accessing the API, Clients should include an `Authorization` header with 
 #### GET /api/principal-officer-documents/{id}/
 - **Description**: Retrieve details of a specific principal officer document by its unique ID.
 - **Parameters**:
-  - `id` (int): The unique identifier of the principal officer document.
+  - `id` (uuid): The unique identifier of the principal officer document.
 - **Response**:
   - `200 OK`: Returns a JSON object representing the principal officer document.
   - `404 Not Found`: Returned if the principal officer document with the specified ID is not found.
@@ -120,7 +120,7 @@ Before accessing the API, Clients should include an `Authorization` header with 
   - `certificate_id` (string): The certificate ID.
   - `certificate` (file): The certificate file.
   - `comments` (string, optional): Comments about the certificate.
-  - `owner` (int): The ID of the owner to associate with the certificate.
+  - `owner` (uuid): The ID of the owner to associate with the certificate.
 - **Response**:
   - `201 Created`: Returns a JSON object representing the created owner detail certificate.
   - `400 Bad Request`: Returned if the request data is invalid.
