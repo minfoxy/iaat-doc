@@ -163,9 +163,7 @@ Before accessing the API, ensure that your system is configured to use token-bas
     {
         "id": "3c1c5b9e-98a7-4b6a-8d9c-d8b74e4c691e",
         "agency_name": "ABC Insurance",
-       
-
- "nature_organization": "Public Limited Company",
+        "nature_organization": "Public Limited Company",
         "date_of_registration": "2022-01-15",
         "location_house": "456 Oak St",
         "location_street": "Suite 101",
